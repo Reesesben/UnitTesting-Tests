@@ -17,6 +17,7 @@
 		B53C835D275DD454004FDA31 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C835C275DD454004FDA31 /* Credentials.swift */; };
 		B53C8360275DD46A004FDA31 /* CredentialsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C835F275DD46A004FDA31 /* CredentialsController.swift */; };
 		B53C8363275DD523004FDA31 /* AuthenticaitonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C8362275DD523004FDA31 /* AuthenticaitonError.swift */; };
+		B53C8367275DDC25004FDA31 /* CredentialsControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C8366275DDC25004FDA31 /* CredentialsControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		B53C835C275DD454004FDA31 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		B53C835F275DD46A004FDA31 /* CredentialsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsController.swift; sourceTree = "<group>"; };
 		B53C8362275DD523004FDA31 /* AuthenticaitonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticaitonError.swift; sourceTree = "<group>"; };
+		B53C8366275DDC25004FDA31 /* CredentialsControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				B53C8352275DD012004FDA31 /* UnitTestingTests.swift */,
+				B53C8366275DDC25004FDA31 /* CredentialsControllerTests.swift */,
 			);
 			path = UnitTestingTests;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B53C8367275DDC25004FDA31 /* CredentialsControllerTests.swift in Sources */,
 				B53C8353275DD012004FDA31 /* UnitTestingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
