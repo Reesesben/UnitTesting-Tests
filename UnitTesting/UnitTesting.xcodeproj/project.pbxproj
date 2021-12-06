@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		B53C8334275DCEF7004FDA31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C8333275DCEF7004FDA31 /* AppDelegate.swift */; };
 		B53C8336275DCEF7004FDA31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C8335275DCEF7004FDA31 /* SceneDelegate.swift */; };
-		B53C8338275DCEF7004FDA31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C8337275DCEF7004FDA31 /* ViewController.swift */; };
 		B53C833B275DCEF7004FDA31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53C8339275DCEF7004FDA31 /* Main.storyboard */; };
 		B53C833D275DCEF8004FDA31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53C833C275DCEF8004FDA31 /* Assets.xcassets */; };
 		B53C8340275DCEF8004FDA31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53C833E275DCEF8004FDA31 /* LaunchScreen.storyboard */; };
 		B53C8353275DD012004FDA31 /* UnitTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C8352275DD012004FDA31 /* UnitTestingTests.swift */; };
+		B53C835A275DD272004FDA31 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C8359275DD272004FDA31 /* LoginViewController.swift */; };
+		B53C835D275DD454004FDA31 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C835C275DD454004FDA31 /* Credentials.swift */; };
+		B53C8360275DD46A004FDA31 /* CredentialsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C835F275DD46A004FDA31 /* CredentialsController.swift */; };
+		B53C8363275DD523004FDA31 /* AuthenticaitonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C8362275DD523004FDA31 /* AuthenticaitonError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,13 +33,16 @@
 		B53C8330275DCEF7004FDA31 /* UnitTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53C8333275DCEF7004FDA31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B53C8335275DCEF7004FDA31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B53C8337275DCEF7004FDA31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B53C833A275DCEF7004FDA31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B53C833C275DCEF8004FDA31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53C833F275DCEF8004FDA31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B53C8341275DCEF8004FDA31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B53C8350275DD012004FDA31 /* UnitTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53C8352275DD012004FDA31 /* UnitTestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingTests.swift; sourceTree = "<group>"; };
+		B53C8359275DD272004FDA31 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B53C835C275DD454004FDA31 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		B53C835F275DD46A004FDA31 /* CredentialsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsController.swift; sourceTree = "<group>"; };
+		B53C8362275DD523004FDA31 /* AuthenticaitonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticaitonError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +84,10 @@
 		B53C8332275DCEF7004FDA31 /* UnitTesting */ = {
 			isa = PBXGroup;
 			children = (
+				B53C835B275DD43C004FDA31 /* Models */,
 				B53C834A275DCF33004FDA31 /* Views */,
 				B53C8348275DCF23004FDA31 /* Controllers */,
+				B53C8361275DD506004FDA31 /* Custom Errors */,
 				B53C8347275DCF18004FDA31 /* Resources */,
 			);
 			path = UnitTesting;
@@ -99,6 +107,7 @@
 		B53C8348275DCF23004FDA31 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B53C835E275DD45D004FDA31 /* ModelControllers */,
 				B53C8349275DCF28004FDA31 /* ViewControllers */,
 			);
 			path = Controllers;
@@ -107,7 +116,7 @@
 		B53C8349275DCF28004FDA31 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B53C8337275DCEF7004FDA31 /* ViewController.swift */,
+				B53C8359275DD272004FDA31 /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -135,6 +144,30 @@
 				B53C8352275DD012004FDA31 /* UnitTestingTests.swift */,
 			);
 			path = UnitTestingTests;
+			sourceTree = "<group>";
+		};
+		B53C835B275DD43C004FDA31 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B53C835C275DD454004FDA31 /* Credentials.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B53C835E275DD45D004FDA31 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B53C835F275DD46A004FDA31 /* CredentialsController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		B53C8361275DD506004FDA31 /* Custom Errors */ = {
+			isa = PBXGroup;
+			children = (
+				B53C8362275DD523004FDA31 /* AuthenticaitonError.swift */,
+			);
+			path = "Custom Errors";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,8 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B53C8338275DCEF7004FDA31 /* ViewController.swift in Sources */,
+				B53C8363275DD523004FDA31 /* AuthenticaitonError.swift in Sources */,
+				B53C835A275DD272004FDA31 /* LoginViewController.swift in Sources */,
 				B53C8334275DCEF7004FDA31 /* AppDelegate.swift in Sources */,
+				B53C835D275DD454004FDA31 /* Credentials.swift in Sources */,
+				B53C8360275DD46A004FDA31 /* CredentialsController.swift in Sources */,
 				B53C8336275DCEF7004FDA31 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
