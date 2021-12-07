@@ -33,6 +33,5 @@ class CredentialsController {
                 return completion(.failure(.IncorrectPassword))
             }
         }
-        
     }
 }
